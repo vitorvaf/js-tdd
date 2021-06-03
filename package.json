@@ -40,6 +40,6 @@
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "dependencies": {
-    "husky": "^6.0.0"
+    "husky": "^4.3.0"
   }
 }
