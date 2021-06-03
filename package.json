@@ -4,6 +4,8 @@
   "description": "Biblioteca do curso de JS com TDD",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/vitorvaf/js-tdd/issues"
   },
-  "homepage": "https://github.com/vitorvaf/js-tdd#readme"
+  "homepage": "https://github.com/vitorvaf/js-tdd#readme",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "hysky": "^1.0.1"
+  }
 }
