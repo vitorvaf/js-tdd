@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky":{
+    "pre-push": "npm run lint"
   },
   "repository": {
     "type": "git",
